@@ -1,0 +1,106 @@
+.clients{
+  background-color: var(--dark);
+  height: 700px;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  padding-top: 8rem;
+}
+
+
+.clients_section{
+  max-width: 1366px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.clients_section > div:nth-child(1){
+  color: var(--secondary);
+}
+
+.clients_section > div:nth-child(1) h1{
+  font-weight: 400;
+  font-size: 3rem;
+  letter-spacing: .12em;
+}
+
+.clients_section > div:nth-child(1) p{
+  letter-spacing: .12em;
+}
+
+.client_says > div:nth-child(2){
+  width: 100%;
+}
+
+.mySwiper{
+  width: 46vh;
+  height: 100%;
+}
+
+.swiper_slide{
+  background-color: var(--secondary);
+  display: flex;
+  flex-direction: column;
+}
+
+.client_says{
+  padding: 2rem;
+}
+
+.client_says h1{
+  margin: 0;
+  font-size: 48px;
+}
+
+.client_says p{
+  margin: 0;
+  font-size: 1rem;
+}
+
+.avatar{
+   border-top: 2px solid var(--dark);
+   padding: 1rem;
+   display: flex;
+   align-items: center;
+   gap: 1.5rem;
+}
+
+.imageAvatar > img{
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+}
+
+@media screen and (max-width:1366px){
+  .clients_section{
+    padding: 0 2rem;
+  }
+}
+
+@media screen and (max-width:767px){
+  .clients{
+    padding-top: 6rem;
+    height: 960px;
+    padding-bottom: 8rem;
+    width: 100%;
+    left: 0;
+  }
+
+  .clients_section{
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .clients_section > div:nth-child(1){
+    text-align: center;
+  }
+
+  .clients_section > div:nth-child(1) h1{
+    font-size: 2rem;
+  }
+
+  .mySwiper{
+    width: 320px;
+  }
+}
